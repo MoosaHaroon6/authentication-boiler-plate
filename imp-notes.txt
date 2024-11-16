@@ -1,0 +1,16 @@
+
+
+
+// in next.config.ts remove :
+
+ async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/login',
+        permanent: true, 
+      },
+    ];
+  },
+
+  it was set on purpose while cloning it remove this code ,Thank You!
