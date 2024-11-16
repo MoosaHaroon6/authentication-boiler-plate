@@ -18,6 +18,10 @@ export default function Login() {
 
             const userData = userCredential.user;
 
+            if (!userData.emailVerified) {
+                setError("User Does Not Exist!");
+            }
+
             if (userData.emailVerified) {
                 route.push('/dashboard')
             } else {
